@@ -1,5 +1,5 @@
 "use client";
-
+import { Suspense } from "react";
 import { useState, useEffect, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Sparkles, ArrowRight, CheckCircle, Loader2, AlertTriangle, Target, Users, Shield, Lightbulb } from "lucide-react";
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ProgressBar, CircularProgress } from "@/components/ui/progress";
 import { analysisSteps, exampleIdeas } from "@/lib/mock-data";
+
 
 type AnalysisState = "idle" | "analyzing" | "complete" | "error";
 
